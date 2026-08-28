@@ -1,6 +1,6 @@
 :root {
 	--bg-dark: #1a1a1a;
-	--bg-darker: #13162f;
+	--bg-darker: #000000;
 	--accent: #ffc800;
 	--accent-hover: #cf9700;
 	--text-light: #ffffff;
@@ -77,8 +77,9 @@ a:hover {
 .hero-bg {
 	position: absolute;
 	inset: 0;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .hero-overlay {
@@ -163,6 +164,46 @@ a:hover {
 
 .button:hover {
 	background-color: var(--accent-hover);
+	color: #ffffff;
+}
+
+.button--sexy-fridays {
+	background-color: #d9332a;
+	color: #f2e6c9;
+}
+
+.button--sexy-fridays:hover {
+	background-color: #a82720;
+	color: #f2e6c9;
+}
+
+.button--ratio {
+	background-color: #cf5b1c;
+	color: #ffffff;
+}
+
+.button--ratio:hover {
+	background-color: #a1450f;
+	color: #ffffff;
+}
+
+.button--farewell-summer {
+	background-color: #3379b8;
+	color: #fbe6c8;
+}
+
+.button--farewell-summer:hover {
+	background-color: #275e91;
+	color: #fbe6c8;
+}
+
+.button--mondaze {
+	background-color: #e8453a;
+	color: #ffffff;
+}
+
+.button--mondaze:hover {
+	background-color: #b8301f;
 	color: #ffffff;
 }
 
