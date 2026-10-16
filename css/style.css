@@ -207,6 +207,46 @@ a:hover {
 	color: #ffffff;
 }
 
+.button--sexier-things {
+	background-color: #1a1310;
+	color: #f5a94e;
+}
+
+.button--sexier-things:hover {
+	background-color: #000000;
+	color: #f5a94e;
+}
+
+.button--thriller {
+	background-color: #8b1a1a;
+	color: #ffffff;
+}
+
+.button--thriller:hover {
+	background-color: #5e1010;
+	color: #ffffff;
+}
+
+.button--south-loop-crawl {
+	background-color: #d9731a;
+	color: #1a1a1a;
+}
+
+.button--south-loop-crawl:hover {
+	background-color: #a85712;
+	color: #1a1a1a;
+}
+
+.button--ratio-pitch-black {
+	background-color: #c0c0c0;
+	color: #0d0d0d;
+}
+
+.button--ratio-pitch-black:hover {
+	background-color: #8f8f8f;
+	color: #0d0d0d;
+}
+
 /* Footer */
 
 .site-footer {
