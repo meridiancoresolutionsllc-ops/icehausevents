@@ -237,6 +237,16 @@ a:hover {
 	color: #1a1a1a;
 }
 
+.button--ratio-pitch-black {
+	background-color: #c0c0c0;
+	color: #0d0d0d;
+}
+
+.button--ratio-pitch-black:hover {
+	background-color: #8f8f8f;
+	color: #0d0d0d;
+}
+
 /* Footer */
 
 .site-footer {
