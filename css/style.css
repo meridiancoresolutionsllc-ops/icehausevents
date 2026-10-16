@@ -74,6 +74,12 @@ a:hover {
 	background-color: var(--bg-darker);
 }
 
+.hero--halloween {
+	background-image: url('../images/bg-halloween-pumpkin.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
 .hero-bg {
 	position: absolute;
 	inset: 0;
