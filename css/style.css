@@ -136,12 +136,6 @@ a:hover {
 	gap: 60px;
 }
 
-.no-events {
-	text-align: center;
-	font-size: 1.1rem;
-	color: var(--accent, inherit);
-}
-
 .event-block {
 	text-align: center;
 }
@@ -211,6 +205,16 @@ a:hover {
 .button--mondaze:hover {
 	background-color: #b8301f;
 	color: #ffffff;
+}
+
+.button--sexier-things {
+	background-color: #1a1310;
+	color: #f5a94e;
+}
+
+.button--sexier-things:hover {
+	background-color: #000000;
+	color: #f5a94e;
 }
 
 /* Footer */
