@@ -28,6 +28,22 @@ body {
 	color: #ffffff;
 }
 
+body.theme--halloween::before {
+	content: "";
+	position: fixed;
+	inset: 0;
+	z-index: 0;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../images/bg-halloween-pumpkin.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.theme--halloween main.events,
+.theme--halloween .site-footer {
+	position: relative;
+}
+
 h1, h2, h3 {
 	font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 	font-weight: 400;
@@ -74,10 +90,8 @@ a:hover {
 	background-color: var(--bg-darker);
 }
 
-.hero--halloween {
-	background-image: url('../images/bg-halloween-pumpkin.jpg');
-	background-size: cover;
-	background-position: center;
+.theme--halloween .hero {
+	background-color: transparent;
 }
 
 .hero-bg {
@@ -259,6 +273,10 @@ a:hover {
 	background-color: var(--bg-dark);
 	padding: 40px 0;
 	margin-top: 40px;
+}
+
+.theme--halloween .site-footer {
+	background-color: rgba(26, 26, 26, 0.7);
 }
 
 .site-footer .container {
