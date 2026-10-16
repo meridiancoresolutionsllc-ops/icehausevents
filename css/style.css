@@ -217,6 +217,16 @@ a:hover {
 	color: #f5a94e;
 }
 
+.button--thriller {
+	background-color: #8b1a1a;
+	color: #ffffff;
+}
+
+.button--thriller:hover {
+	background-color: #5e1010;
+	color: #ffffff;
+}
+
 /* Footer */
 
 .site-footer {
