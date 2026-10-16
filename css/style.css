@@ -227,6 +227,16 @@ a:hover {
 	color: #ffffff;
 }
 
+.button--south-loop-crawl {
+	background-color: #d9731a;
+	color: #1a1a1a;
+}
+
+.button--south-loop-crawl:hover {
+	background-color: #a85712;
+	color: #1a1a1a;
+}
+
 /* Footer */
 
 .site-footer {
