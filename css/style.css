@@ -136,6 +136,12 @@ a:hover {
 	gap: 60px;
 }
 
+.no-events {
+	text-align: center;
+	font-size: 1.1rem;
+	color: var(--accent, inherit);
+}
+
 .event-block {
 	text-align: center;
 }
