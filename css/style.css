@@ -253,6 +253,16 @@ a:hover {
 	color: #1a1a1a;
 }
 
+.button--jam-session {
+	background-color: #e8d9b5;
+	color: #3a2a18;
+}
+
+.button--jam-session:hover {
+	background-color: #c9b88e;
+	color: #3a2a18;
+}
+
 .button--ratio-pitch-black {
 	background-color: #c0c0c0;
 	color: #0d0d0d;
