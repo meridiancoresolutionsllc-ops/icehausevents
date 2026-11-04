@@ -28,22 +28,6 @@ body {
 	color: #ffffff;
 }
 
-body.theme--halloween::before {
-	content: "";
-	position: fixed;
-	inset: 0;
-	z-index: 0;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../images/bg-halloween-pumpkin.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.theme--halloween main.events,
-.theme--halloween .site-footer {
-	position: relative;
-}
-
 /* Age gate */
 
 .age-gate {
@@ -233,10 +217,6 @@ a:hover {
 	background-color: var(--bg-darker);
 }
 
-.theme--halloween .hero {
-	background-color: transparent;
-}
-
 .hero-bg {
 	position: absolute;
 	inset: 0;
@@ -392,10 +372,6 @@ a:hover {
 	background-color: var(--bg-dark);
 	padding: 40px 0;
 	margin-top: 40px;
-}
-
-.theme--halloween .site-footer {
-	background-color: rgba(26, 26, 26, 0.7);
 }
 
 .site-footer .container {
