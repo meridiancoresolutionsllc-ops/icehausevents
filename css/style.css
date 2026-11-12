@@ -105,8 +105,8 @@ a:hover { color: var(--accent); }
 .header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 20px; padding-top: 16px; padding-bottom: 16px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .brand-name { font-family: var(--display); font-size: 20px; letter-spacing: 0.12em; }
-.main-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 15px; font-weight: 500; }
-.main-nav a:not(.btn) { text-decoration: none; padding: 10px 0; }
+.main-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; margin-left: auto; font-size: 15px; font-weight: 500; }
+.main-nav a { text-decoration: none; padding: 10px 0; }
 
 /* Hero */
 
@@ -234,7 +234,13 @@ a:hover { color: var(--accent); }
 	.next-chip { margin-top: 16px; }
 	.panel { padding: 32px 24px; }
 	.facts { grid-template-columns: minmax(0, 1fr); }
-	.main-nav { gap: 4px 20px; }
+	.header-inner { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px 12px; padding-top: 12px; padding-bottom: 4px; }
+	.brand { min-width: 0; gap: 10px; }
+	.brand svg { width: 38px; height: 38px; flex: none; }
+	.brand-name { font-size: 17px; letter-spacing: 0.08em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+	.header-cta { grid-column: 2; grid-row: 1; }
+	.main-nav { grid-column: 1 / -1; grid-row: 2; margin-left: 0; justify-content: space-between; gap: 0 16px; padding-top: 2px; border-top: 1px solid var(--line); }
+	.main-nav a { padding: 12px 0; }
 	.event-block { gap: 16px 24px; }
 	.gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 200px; gap: 8px; }
 }
