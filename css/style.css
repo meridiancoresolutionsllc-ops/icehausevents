@@ -193,6 +193,11 @@ a:hover { color: var(--accent); }
 .list-row { display: flex; flex-wrap: wrap; gap: 12px; width: 100%; }
 .list-row input { flex: 1 1 220px; min-height: 52px; padding: 0 18px; border: 2px solid var(--bg); border-radius: 999px; font-family: var(--body); font-size: 16px; background: #FFFFFF; color: var(--bg); }
 .panel--accent :focus-visible { outline-color: var(--bg); }
+.list-divider { display: flex; align-items: center; gap: 12px; width: 100%; font-size: 13px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; }
+.list-divider::before, .list-divider::after { content: ""; flex: 1; height: 1px; background: rgba(10, 10, 11, 0.35); }
+.text-alert { display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 0 22px; border: 2px solid var(--bg); border-radius: 999px; color: var(--bg); text-decoration: none; font-size: 17px; }
+.text-alert:hover { background: var(--bg); color: var(--accent); }
+.text-alert strong { font-family: var(--display); font-weight: 400; font-size: 20px; letter-spacing: 0.04em; }
 
 /* Footer */
 
