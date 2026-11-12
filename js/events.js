@@ -36,6 +36,14 @@
 		}
 	});
 
+	// If the featured-event spotlight (#next) was removed, point any links to it
+	// (e.g. the header "Get Tickets" button) at the Upcoming list instead.
+	if (!document.getElementById('next')) {
+		document.querySelectorAll('a[href="#next"]').forEach(function (a) {
+			a.setAttribute('href', '#events');
+		});
+	}
+
 	var eventsContainer = document.querySelector('.events');
 	if (!eventsContainer) return;
 
