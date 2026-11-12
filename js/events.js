@@ -27,14 +27,17 @@
 	}
 
 	var now = new Date();
-	var eventsContainer = document.querySelector('.events');
-	if (!eventsContainer) return;
 
-	eventsContainer.querySelectorAll('.event-block[data-event-date]').forEach(function (block) {
-		if (now >= cutoffInstant(block.getAttribute('data-event-date'))) {
-			block.remove();
+	// Any element tagged with data-event-date (list rows, the spotlight, the
+	// hero "next up" chip) is removed once its event is over.
+	document.querySelectorAll('[data-event-date]').forEach(function (el) {
+		if (now >= cutoffInstant(el.getAttribute('data-event-date'))) {
+			el.remove();
 		}
 	});
+
+	var eventsContainer = document.querySelector('.events');
+	if (!eventsContainer) return;
 
 	if (eventsContainer.querySelectorAll('.event-block').length === 0) {
 		var noEvents = eventsContainer.querySelector('.no-events');

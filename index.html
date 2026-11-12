@@ -2,16 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>IceHaus Events – Curated for young professionals</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="IceHaus Events — bringing you the dopest day parties and nightlife.">
+<title>IceHaus Events – Curated nights for the culture | Chicago</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="IceHaus Events curates the dopest day parties and nightlife experiences in Chicago — RATIO, Haus 57 Thursdays, and the city's biggest holiday takeovers. 21+.">
+<meta property="og:title" content="IceHaus Events – Curated nights for the culture">
+<meta property="og:description" content="Day parties and nightlife in Chicago. RATIO, Haus 57 Thursdays and holiday takeovers. 21+.">
+<meta property="og:image" content="images/flyer-ratio-pitch-black.png">
 <link rel="icon" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Poppins:400,500,700|Oswald:400,500,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
 
 <div id="age-gate" class="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-gate-title">
 	<div class="age-gate-card">
@@ -24,7 +28,7 @@
 			<form id="age-gate-form" class="age-gate-form" novalidate>
 				<label for="age-gate-dob">Enter your date of birth</label>
 				<input type="date" id="age-gate-dob" name="dob">
-				<button type="submit" class="button age-gate-submit">Confirm</button>
+				<button type="submit" class="btn btn--accent age-gate-submit">Confirm</button>
 			</form>
 
 			<p id="age-gate-error" class="age-gate-error" hidden>Please enter a valid date of birth.</p>
@@ -32,8 +36,8 @@
 			<div class="age-gate-divider"><span>or</span></div>
 
 			<div class="age-gate-quick">
-				<button type="button" id="age-gate-yes" class="button age-gate-yes">Yes, I'm 21+</button>
-				<button type="button" id="age-gate-no" class="age-gate-no">No</button>
+				<button type="button" id="age-gate-yes" class="btn btn--accent age-gate-yes">Yes, I'm 21+</button>
+				<button type="button" id="age-gate-no" class="btn btn--outline age-gate-no">No</button>
 			</div>
 		</div>
 
@@ -45,35 +49,207 @@
 	</div>
 </div>
 
+<!-- NAV -->
+<header class="site-header">
+	<div class="container header-inner">
+		<a href="#top" class="brand">
+			<svg width="44" height="44" viewBox="0 0 100 100" aria-hidden="true"><path d="M8 46 L50 8 L66 23 V14 H78 V34 L92 46" fill="none" stroke="#5AB4FF" stroke-width="5" stroke-linejoin="round"/><text x="50" y="80" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="36" fill="#5AB4FF">ICE</text><text x="50" y="97" text-anchor="middle" font-family="Montserrat" font-weight="800" font-size="12" letter-spacing="6" fill="#5AB4FF">HAUS</text></svg>
+			<span class="brand-name">ICEHAUS EVENTS</span>
+		</a>
+		<nav aria-label="Main" class="main-nav">
+			<a href="#events">Events</a>
+			<a href="#series">Series</a>
+			<a href="#recaps">Recaps</a>
+			<a href="#book">Book Us</a>
+			<a href="#next" class="btn btn--accent btn--sm">Get Tickets</a>
+		</nav>
+	</div>
+</header>
+
+<main>
+
+<!-- HERO -->
 <section class="hero">
-	<div class="hero-bg" style="background-image:url('images/logo.png');"></div>
+	<img src="images/photos/stage-lights.jpg" alt="" class="hero-bg">
+	<div class="hero-shade"></div>
+	<div class="container hero-content">
+		<p class="eyebrow">Chicago · Day parties &amp; nightlife · 21+</p>
+		<h1 class="display display--xl">Curated nights <span class="accent">for the</span> culture.</h1>
+		<p class="lede">The dopest day parties and nightlife experiences in the city — RATIO, Haus 57 Thursdays, and the holiday takeovers Chicago plans its calendar around.</p>
+		<div class="btn-row">
+			<a href="#events" class="btn btn--accent">See upcoming events</a>
+			<a href="#list" class="btn btn--outline">Join the list</a>
+		</div>
+		<a href="#next" class="next-chip" data-event-date="2026-11-28">
+			<span class="next-chip-label">NEXT UP</span>
+			<span>Sat, Nov 28 — RATIO: Pitch Black · Sound-Bar</span>
+			<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+		</a>
+	</div>
 </section>
 
-<main class="events">
-
-	<div class="event-block" data-event-date="2026-11-28">
-		<img src="images/flyer-ratio-pitch-black.png" alt="RATIO: Pitch Black Edition with sound selectors Kickn Kenny, Bandcamp, Suave, and Lizomoah event flyer" loading="lazy">
-		<a class="button button--ratio-pitch-black" href="https://events.eventnoire.com/e/ratio-pitch-black-chicago-2" target="_blank" rel="noopener">RATIO: PITCH BLACK EDITION</a>
+<!-- NEXT EVENT SPOTLIGHT -->
+<section id="next" class="container spotlight" data-event-date="2026-11-28">
+	<img src="images/flyer-ratio-pitch-black.png" alt="RATIO: Pitch Black Edition flyer, November 28th 2026, with sound selectors Kickn Kenny, Bandcamp, Suave and Lizomoah" class="spotlight-flyer">
+	<div class="spotlight-body">
+		<p class="eyebrow">Thanksgiving weekend · 3rd annual</p>
+		<h2 class="display display--lg">RATIO: <span class="accent">Pitch Black</span></h2>
+		<p class="lede">Everybody's home for the holidays — and everybody's in black. Our annual All Black Party returns as a day party at the legendary Sound-Bar, with Ain't It Fun Social Club.</p>
+		<dl class="facts">
+			<div><dt>Date</dt><dd>Saturday, November 28</dd></div>
+			<div><dt>Doors</dt><dd>3:00 PM</dd></div>
+			<div><dt>Venue</dt><dd>Sound-Bar, 226 W Ontario St</dd></div>
+			<div><dt>Dress code</dt><dd>All black. Required.</dd></div>
+			<div class="facts-wide"><dt>Sound selectors</dt><dd>Kickn Kenny · Bandcamp · Suave · Lizomoah</dd></div>
+		</dl>
+		<div class="btn-row">
+			<a href="https://events.eventnoire.com/e/ratio-pitch-black-chicago-2" target="_blank" rel="noopener" class="btn btn--accent">Get tickets</a>
+		</div>
 	</div>
+</section>
 
-	<p class="no-events" hidden>No upcoming events right now — check back soon!</p>
+<!-- UPCOMING -->
+<section id="events" class="band">
+	<div class="container section">
+		<div class="section-head">
+			<h2 class="display display--md">Upcoming</h2>
+			<p class="muted">All events 21+ · Chicago unless noted</p>
+		</div>
+		<div class="events">
+			<div class="event-block" data-event-date="2026-11-19">
+				<div class="event-date"><span class="event-dow">THU</span><span class="event-day">19</span><span class="event-mon">NOV</span></div>
+				<div class="event-info"><p class="event-name">Haus 57 · Lounge Sounds w/ Diggs</p><p class="event-detail">Prime 57 Restaurant + Lounge · $7 lemon drops 8–9 PM</p></div>
+				<span class="event-time">4 PM – 10 PM</span>
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Reserve</a>
+			</div>
+			<div class="event-block" data-event-date="2026-11-28">
+				<div class="event-date"><span class="event-dow">SAT</span><span class="event-day">28</span><span class="event-mon">NOV</span></div>
+				<div class="event-info"><p class="event-name">RATIO: Pitch Black — All Black Party</p><p class="event-detail">Sound-Bar, 226 W Ontario St · All-black attire required</p></div>
+				<span class="event-time">Doors 3 PM</span>
+				<a href="https://events.eventnoire.com/e/ratio-pitch-black-chicago-2" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Tickets</a>
+			</div>
+			<div class="event-block" data-event-date="2026-12-03">
+				<div class="event-date"><span class="event-dow">THU</span><span class="event-day">03</span><span class="event-mon">DEC</span></div>
+				<div class="event-info"><p class="event-name">Haus 57 · Lounge Sounds w/ Sukigeez</p><p class="event-detail">Prime 57 Restaurant + Lounge</p></div>
+				<span class="event-time">4 PM – 10 PM</span>
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Reserve</a>
+			</div>
+			<div class="event-block" data-event-date="2026-12-10">
+				<div class="event-date"><span class="event-dow">THU</span><span class="event-day">10</span><span class="event-mon">DEC</span></div>
+				<div class="event-info"><p class="event-name">Haus 57 · Lounge Sounds w/ Corleone</p><p class="event-detail">Prime 57 Restaurant + Lounge</p></div>
+				<span class="event-time">4 PM – 10 PM</span>
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Reserve</a>
+			</div>
+			<div class="event-block" data-event-date="2026-12-17">
+				<div class="event-date"><span class="event-dow">THU</span><span class="event-day">17</span><span class="event-mon">DEC</span></div>
+				<div class="event-info"><p class="event-name">Haus 57 · Lounge Sounds w/ DJ EJ</p><p class="event-detail">Prime 57 Restaurant + Lounge</p></div>
+				<span class="event-time">4 PM – 10 PM</span>
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Reserve</a>
+			</div>
+			<p class="no-events" hidden>No upcoming events right now — follow <a href="https://instagram.com/icehausevents" target="_blank" rel="noopener">@icehausevents</a> for the next drop.</p>
+		</div>
+	</div>
+</section>
+
+<!-- SERIES -->
+<section id="series" class="container section">
+	<h2 class="display display--md">The series</h2>
+	<p class="lede muted series-intro">Four ways to find us. Pick your lane — or do all of them.</p>
+	<div class="card-grid">
+		<article class="card">
+			<img src="images/photos/ratio-sign.jpg" alt="Guest holding a RATIO sign" loading="lazy">
+			<div class="card-body">
+				<h3 class="card-title">RATIO</h3>
+				<p>Our signature party. Hip-hop, R&amp;B, Afrobeats and Chicago juke — born here, now touring city to city.</p>
+				<a href="https://instagram.com/ratio.chi" target="_blank" rel="noopener" class="card-link">Follow @ratio.chi <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+			</div>
+		</article>
+		<article class="card">
+			<img src="images/photos/haus57-flyer.jpg" alt="Haus 57 every Thursday flyer" loading="lazy">
+			<div class="card-body">
+				<h3 class="card-title">Haus 57</h3>
+				<p>Every Thursday at Prime 57. Happy hour 4–7, lounge sounds 7–10, specials all day.</p>
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="card-link">Reserve a table <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+			</div>
+		</article>
+		<article class="card">
+			<img src="images/photos/thriller-ghostface.jpg" alt="Halloween guest in a jeweled mask" loading="lazy">
+			<div class="card-body">
+				<h3 class="card-title">Holiday takeovers</h3>
+				<p>Halloween, NYE, St. Patty’s, Memorial Day and Juneteenth — the city’s biggest weekends, done right.</p>
+			</div>
+		</article>
+		<article class="card">
+			<img src="images/photos/daytime-lake.jpg" alt="Two guests at a lakefront day party" loading="lazy">
+			<div class="card-body">
+				<h3 class="card-title">Day parties</h3>
+				<p>$$FRI4U, Pier Pressure and The Block Party at Recess. Summer in Chicago, outside.</p>
+			</div>
+		</article>
+	</div>
+</section>
+
+<!-- RECAP -->
+<section id="recaps" class="band">
+	<div class="container section">
+		<div class="section-head">
+			<div>
+				<p class="eyebrow">Recap · Oct 31 · Avondale Music Hall</p>
+				<h2 class="display display--xl-alt">Thriller.</h2>
+			</div>
+			<p class="lede recap-lede">Sold out. More than 1,000 people through the doors for our biggest Halloween party yet, starring Sea Rae.</p>
+		</div>
+		<div class="gallery">
+			<img src="images/photos/thriller-zebra.jpg" alt="Guests in costume at the barricade at Thriller" class="gallery-tall" loading="lazy">
+			<img src="images/photos/thriller-ghostface.jpg" alt="Guest in a jeweled Ghostface mask" loading="lazy">
+			<img src="images/photos/thriller-mib.jpg" alt="Two guests dressed as Men in Black" loading="lazy">
+			<img src="images/photos/thriller-cheer.jpg" alt="Group costume of cheerleaders" loading="lazy">
+			<img src="images/photos/thriller-crowd.jpg" alt="The Thriller crowd under the lights" class="gallery-wide" loading="lazy">
+			<img src="images/photos/halloween-pink.jpg" alt="Guest in a pink gingham costume" loading="lazy">
+		</div>
+		<div class="recap-foot">
+			<p class="muted small">Photos: @focus_by_josh</p>
+			<a href="https://instagram.com/icehausevents" target="_blank" rel="noopener" class="inline-link">More recaps on Instagram · 11.7K following along <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+		</div>
+	</div>
+</section>
+
+<!-- BOOK + LIST -->
+<section id="book" class="container section split">
+	<div class="panel">
+		<h2 class="display display--sm">Throw it <span class="accent">with us.</span></h2>
+		<p>Venues, brands and artists: we handle the concept, the lineup, the look and the room. Past collaborators include Visionary Productions, That's So Rubes, Ain't It Fun Social Club, Girls Love R&amp;B and Recess.</p>
+		<a href="mailto:icehausent@gmail.com?subject=Booking%20inquiry" class="btn btn--light">Start a booking inquiry</a>
+	</div>
+	<!-- MAILING LIST: replace this form's action / fields with your mailing-list provider's embed -->
+	<form id="list" class="panel panel--accent" action="#" onsubmit="return false;">
+		<h2 class="display display--sm">Get on the list.</h2>
+		<p>First access to tickets, free-ticket drops and secret locations. No spam.</p>
+		<label for="list-email">Email</label>
+		<div class="list-row">
+			<input id="list-email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required>
+			<button type="submit" class="btn btn--dark">I'm in</button>
+		</div>
+	</form>
+</section>
 
 </main>
 
 <footer class="site-footer">
-	<div class="container">
-		<a id="back-to-top" href="#top" class="button footer-button" aria-label="Back to top">&#8593;</a>
-		<div class="copyright">2023 ICE HAUS EVENTS, LLC.</div>
-		<ul class="social">
-			<li><a href="https://facebook.com/icehausevents" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a></li>
-			<li><a href="https://twitter.com/icehausevents" target="_blank" rel="noopener" aria-label="X (Twitter)">X</a></li>
-			<li><a href="https://instagram.com/icehausevents" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a></li>
-		</ul>
+	<div class="container footer-inner">
+		<span>© <span id="year">2026</span> ICE HAUS EVENTS, LLC · Chicago · 21+</span>
+		<nav aria-label="Social" class="social">
+			<a href="https://instagram.com/icehausevents" target="_blank" rel="noopener">Instagram</a>
+			<a href="https://facebook.com/icehausevents" target="_blank" rel="noopener">Facebook</a>
+			<a href="https://twitter.com/icehausevents" target="_blank" rel="noopener">X</a>
+			<a href="https://linktr.ee/icehausevent" target="_blank" rel="noopener">Linktree</a>
+		</nav>
 	</div>
 </footer>
 
 <script src="js/age-gate.js"></script>
 <script src="js/events.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 
 </body>
 </html>
