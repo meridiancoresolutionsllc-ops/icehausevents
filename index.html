@@ -58,9 +58,9 @@
 		</a>
 		<nav aria-label="Main" class="main-nav">
 			<a href="#events">Events</a>
-			<a href="#series">Series</a>
-			<a href="#recaps">Recaps</a>
-			<a href="#book">Book Us</a>
+			<a href="#series">Vibes</a>
+			<a href="#recaps">Photos</a>
+			<a href="#book">Host With Us</a>
 		</nav>
 		<a href="#next" class="btn btn--accent btn--sm header-cta">Get Tickets</a>
 	</div>
@@ -75,10 +75,10 @@
 	<div class="container hero-content">
 		<p class="eyebrow">Chicago · Day parties &amp; nightlife · 21+</p>
 		<h1 class="display display--xl">Curated nights <span class="accent">for the</span> culture.</h1>
-		<p class="lede">The dopest day parties and nightlife experiences in the city — RATIO, Haus 57 Thursdays, and the holiday takeovers Chicago plans its calendar around.</p>
+		<p class="lede">The dopest day parties and nightlife in the city. Good music, a good-looking crowd and a reason to leave the group chat — come through.</p>
 		<div class="btn-row">
-			<a href="#events" class="btn btn--accent">See upcoming events</a>
-			<a href="#list" class="btn btn--outline">Join the list</a>
+			<a href="#events" class="btn btn--accent">What's coming up</a>
+			<a href="#list" class="btn btn--outline">Get on the list</a>
 		</div>
 		<a href="#next" class="next-chip" data-event-date="2026-11-28">
 			<span class="next-chip-label">NEXT UP</span>
@@ -88,102 +88,92 @@
 	</div>
 </section>
 
-<!-- NEXT EVENT SPOTLIGHT -->
-<section id="next" class="container spotlight" data-event-date="2026-11-28">
-	<img src="images/flyer-ratio-pitch-black.jpg" alt="RATIO: Pitch Black Edition flyer — November 28th 2026 at Sound-Bar, 226 West Ontario Street, Chicago. Doors at 3 PM. Sound selectors Kickn Kenny, Bandcamp, Suave and Liz Moah" class="spotlight-flyer">
-	<div class="spotlight-body">
-		<p class="eyebrow">Thanksgiving weekend · 3rd annual</p>
-		<h2 class="display display--lg">RATIO: <span class="accent">Pitch Black</span></h2>
-		<p class="lede">Everybody's home for the holidays — and everybody's in black. Our annual All Black Party returns as a day party at the legendary Sound-Bar, with Ain't It Fun Social Club.</p>
-		<dl class="facts">
-			<div><dt>Date</dt><dd>Saturday, November 28</dd></div>
-			<div><dt>Doors</dt><dd>3:00 PM</dd></div>
-			<div><dt>Venue</dt><dd>Sound-Bar, 226 W Ontario St</dd></div>
-			<div><dt>Dress code</dt><dd>All black. Required.</dd></div>
-			<div class="facts-wide"><dt>Sound selectors</dt><dd>Kickn Kenny · Bandcamp · Suave · Liz Moah</dd></div>
-		</dl>
-		<div class="btn-row">
-			<a href="https://events.eventnoire.com/e/ratio-pitch-black-chicago-2" target="_blank" rel="noopener" class="btn btn--accent">Get tickets</a>
-		</div>
-	</div>
-</section>
+<!-- EVENTS: "PULL UP" -->
+<section id="events" class="container section">
+	<h2 class="display display--md pull-up-title">Pull up.</h2>
+	<div class="events">
 
-<!-- UPCOMING -->
-<section id="events" class="band">
-	<div class="container section">
-		<div class="section-head">
-			<h2 class="display display--md">Upcoming</h2>
-			<p class="muted">All events 21+ · Chicago unless noted</p>
+		<!-- Featured event ticket (removed automatically after its date by js/events.js) -->
+		<article id="next" class="ticket event-block" data-event-date="2026-11-28">
+			<img src="images/flyer-ratio-pitch-black.jpg" alt="RATIO: Pitch Black Edition flyer — November 28th 2026 at Sound-Bar, 226 West Ontario Street, Chicago. Doors at 3 PM. Sound selectors Kickn Kenny, Bandcamp, Suave and Liz Moah" class="ticket-flyer">
+			<div class="ticket-body">
+				<span class="tag">Thanksgiving weekend · Day party</span>
+				<h3 class="display ticket-title">RATIO: <span class="accent">Pitch Black</span></h3>
+				<p class="ticket-copy">The 3rd annual All Black Party. Everybody's home for the holidays — wear black, bring the energy. Presented with Ain't It Fun Social Club.</p>
+				<dl class="ticket-facts">
+					<div><dt>When</dt><dd>Sat, Nov 28 · Doors 3 PM</dd></div>
+					<div><dt>Where</dt><dd>Sound-Bar · 226 W Ontario St</dd></div>
+					<div><dt>Dress code</dt><dd>All black. Required.</dd></div>
+					<div><dt>On the ones</dt><dd>Kickn Kenny, Bandcamp, Suave, Liz Moah</dd></div>
+				</dl>
+				<a href="https://events.eventnoire.com/e/ratio-pitch-black-chicago-2" target="_blank" rel="noopener" class="btn btn--accent ticket-cta">Grab tickets</a>
+			</div>
+		</article>
+
+		<!-- Haus 57 Thursdays (each tile removed after its date; the whole row after the last one) -->
+		<div class="haus-row" data-event-date="2026-12-17">
+			<div class="haus-intro">
+				<p class="display haus-title">Haus 57<br>Thursdays</p>
+				<p>Prime 57 Restaurant + Lounge. Happy hour 4–7, lounge sounds 7–10. $7 lemon drops from 8–9.</p>
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="card-link">Reserve a table <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+			</div>
+			<div class="date-tiles">
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="date-tile date-tile--accent event-block" data-event-date="2026-11-19" aria-label="Reserve for Haus 57 on 11/19 with Diggs">
+					<span class="date-tile-date">11/19</span>
+					<span class="date-tile-dj"><span class="date-tile-label">On the ones</span>Diggs</span>
+				</a>
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="date-tile date-tile--panel event-block" data-event-date="2026-12-03" aria-label="Reserve for Haus 57 on 12/03 with Sukigeez">
+					<span class="date-tile-date">12/03</span>
+					<span class="date-tile-dj"><span class="date-tile-label">On the ones</span>Sukigeez</span>
+				</a>
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="date-tile date-tile--light event-block" data-event-date="2026-12-10" aria-label="Reserve for Haus 57 on 12/10 with Corleone">
+					<span class="date-tile-date">12/10</span>
+					<span class="date-tile-dj"><span class="date-tile-label">On the ones</span>Corleone</span>
+				</a>
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="date-tile date-tile--accent event-block" data-event-date="2026-12-17" aria-label="Reserve for Haus 57 on 12/17 with DJ EJ">
+					<span class="date-tile-date">12/17</span>
+					<span class="date-tile-dj"><span class="date-tile-label">On the ones</span>DJ EJ</span>
+				</a>
+			</div>
 		</div>
-		<div class="events">
-			<div class="event-block" data-event-date="2026-11-19">
-				<div class="event-date"><span class="event-dow">THU</span><span class="event-day">19</span><span class="event-mon">NOV</span></div>
-				<div class="event-info"><p class="event-name">Haus 57 · Lounge Sounds w/ Diggs</p><p class="event-detail">Prime 57 Restaurant + Lounge · $7 lemon drops 8–9 PM</p></div>
-				<span class="event-time">4 PM – 10 PM</span>
-				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Reserve</a>
-			</div>
-			<div class="event-block" data-event-date="2026-11-28">
-				<div class="event-date"><span class="event-dow">SAT</span><span class="event-day">28</span><span class="event-mon">NOV</span></div>
-				<div class="event-info"><p class="event-name">RATIO: Pitch Black — All Black Party</p><p class="event-detail">Sound-Bar, 226 W Ontario St · All-black attire required</p></div>
-				<span class="event-time">Doors 3 PM</span>
-				<a href="https://events.eventnoire.com/e/ratio-pitch-black-chicago-2" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Tickets</a>
-			</div>
-			<div class="event-block" data-event-date="2026-12-03">
-				<div class="event-date"><span class="event-dow">THU</span><span class="event-day">03</span><span class="event-mon">DEC</span></div>
-				<div class="event-info"><p class="event-name">Haus 57 · Lounge Sounds w/ Sukigeez</p><p class="event-detail">Prime 57 Restaurant + Lounge</p></div>
-				<span class="event-time">4 PM – 10 PM</span>
-				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Reserve</a>
-			</div>
-			<div class="event-block" data-event-date="2026-12-10">
-				<div class="event-date"><span class="event-dow">THU</span><span class="event-day">10</span><span class="event-mon">DEC</span></div>
-				<div class="event-info"><p class="event-name">Haus 57 · Lounge Sounds w/ Corleone</p><p class="event-detail">Prime 57 Restaurant + Lounge</p></div>
-				<span class="event-time">4 PM – 10 PM</span>
-				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Reserve</a>
-			</div>
-			<div class="event-block" data-event-date="2026-12-17">
-				<div class="event-date"><span class="event-dow">THU</span><span class="event-day">17</span><span class="event-mon">DEC</span></div>
-				<div class="event-info"><p class="event-name">Haus 57 · Lounge Sounds w/ DJ EJ</p><p class="event-detail">Prime 57 Restaurant + Lounge</p></div>
-				<span class="event-time">4 PM – 10 PM</span>
-				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Reserve</a>
-			</div>
-			<p class="no-events" hidden>No upcoming events right now — follow <a href="https://instagram.com/icehausevents" target="_blank" rel="noopener">@icehausevents</a> for the next drop.</p>
-		</div>
+
+		<p class="no-events" hidden>Nothing on the calendar right now — follow <a href="https://instagram.com/icehausevents" target="_blank" rel="noopener">@icehausevents</a> and get on the list so you don't miss the drop.</p>
 	</div>
 </section>
 
 <!-- SERIES -->
 <section id="series" class="container section">
-	<h2 class="display display--md">The series</h2>
-	<p class="lede muted series-intro">Four ways to find us. Pick your lane — or do all of them.</p>
+	<h2 class="display display--md">Pick your vibe.</h2>
+	<p class="lede muted series-intro">Four ways to find us. Pick your lane — or pull up to all of them.</p>
 	<div class="card-grid">
 		<article class="card">
 			<img src="images/photos/ratio-sign.jpg" alt="Guest holding a RATIO sign" loading="lazy">
 			<div class="card-body">
 				<h3 class="card-title">RATIO</h3>
-				<p>Our signature party. Hip-hop, R&amp;B, Afrobeats and Chicago juke — born here, now touring city to city.</p>
+				<p>Hip-hop, R&amp;B, Afrobeats and juke. Chicago-born, now on tour.</p>
 				<a href="https://instagram.com/ratio.chi" target="_blank" rel="noopener" class="card-link">Follow @ratio.chi <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 			</div>
 		</article>
 		<article class="card">
 			<img src="images/photos/haus57-flyer.jpg" alt="Haus 57 every Thursday flyer" loading="lazy">
 			<div class="card-body">
-				<h3 class="card-title">Haus 57</h3>
-				<p>Every Thursday at Prime 57. Happy hour 4–7, lounge sounds 7–10, specials all day.</p>
+				<h3 class="card-title">Thursdays</h3>
+				<p>Haus 57 at Prime 57. After-work drinks that turn into a night.</p>
 				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="card-link">Reserve a table <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 			</div>
 		</article>
 		<article class="card">
 			<img src="images/photos/thriller-ghostface.jpg" alt="Halloween guest in a jeweled mask" loading="lazy">
 			<div class="card-body">
-				<h3 class="card-title">Holiday takeovers</h3>
-				<p>Halloween, NYE, St. Patty’s, Memorial Day and Juneteenth — the city’s biggest weekends, done right.</p>
+				<h3 class="card-title">Holidays</h3>
+				<p>Halloween, NYE, St. Patty’s, MDW, Juneteenth. The big weekends.</p>
 			</div>
 		</article>
 		<article class="card">
 			<img src="images/photos/daytime-lake.jpg" alt="Two guests at a lakefront day party" loading="lazy">
 			<div class="card-body">
 				<h3 class="card-title">Day parties</h3>
-				<p>$$FRI4U, Pier Pressure and The Block Party at Recess. Summer in Chicago, outside.</p>
+				<p>$$FRI4U, Pier Pressure, The Block Party. Sunlight optional, fits mandatory.</p>
 			</div>
 		</article>
 	</div>
@@ -194,10 +184,10 @@
 	<div class="container section">
 		<div class="section-head">
 			<div>
-				<p class="eyebrow">Recap · Oct 31 · Avondale Music Hall</p>
-				<h2 class="display display--xl-alt">Thriller.</h2>
+				<p class="eyebrow">Thriller · Oct 31 · Avondale Music Hall</p>
+				<h2 class="display display--xl-alt">The proof.</h2>
 			</div>
-			<p class="lede recap-lede">Sold out. More than 1,000 people through the doors for our biggest Halloween party yet, starring Sea Rae.</p>
+			<p class="lede recap-lede"><span class="accent recap-stat">1,000+ pulled up.</span> Sold out. Our biggest Halloween party yet, starring Sea Rae. Missed it? Get on the list for the next one.</p>
 		</div>
 		<div class="gallery">
 			<img src="images/photos/thriller-zebra.jpg" alt="Guests in costume at the barricade at Thriller" class="gallery-tall" loading="lazy">
@@ -217,21 +207,21 @@
 <!-- BOOK + LIST -->
 <section id="book" class="container section split">
 	<div class="panel">
-		<h2 class="display display--sm">Throw it <span class="accent">with us.</span></h2>
-		<p>Venues, brands and artists: we handle the concept, the lineup, the look and the room. Past collaborators include Visionary Productions, That's So Rubes, Ain't It Fun Social Club, Girls Love R&amp;B and Recess.</p>
-		<a href="mailto:icehausent@gmail.com?subject=Booking%20inquiry" class="btn btn--light">Start a booking inquiry</a>
+		<h2 class="display display--sm">Host with <span class="accent">IceHaus.</span></h2>
+		<p>Got a venue, a brand or a lineup? We've built parties with Visionary Productions, That's So Rubes, Ain't It Fun Social Club, Girls Love R&amp;B and Recess. Let's build yours.</p>
+		<a href="mailto:icehausent@gmail.com?subject=Booking%20inquiry" class="btn btn--light">Let's talk</a>
 	</div>
 	<!-- MAILING LIST: MailerLite classic web form "r0j8e6" (form ID 6140783).
 	     Posts into a hidden iframe so visitors stay on the page; js/signup.js validates and shows the success message. -->
 	<div id="list" class="panel panel--accent">
-		<h2 class="display display--sm">Get on the list.</h2>
-		<p>First access to tickets, free-ticket drops and secret locations. No spam.</p>
+		<h2 class="display display--sm">Don't miss the drop.</h2>
+		<p>Free-ticket giveaways and early-bird links go to the list first. No spam.</p>
 
 		<form id="list-form" class="list-form" action="https://static.mailerlite.com/webforms/submit/r0j8e6" method="post" target="ml-submit-frame" novalidate>
 			<label for="list-email">Email</label>
 			<div class="list-row">
 				<input id="list-email" name="fields[email]" type="email" placeholder="you@email.com" autocomplete="email" required>
-				<button type="submit" class="btn btn--dark">I'm in</button>
+				<button type="submit" class="btn btn--dark">Put me on</button>
 			</div>
 			<div class="g-recaptcha list-captcha" data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD"></div>
 			<input type="hidden" name="ml-submit" value="1">
