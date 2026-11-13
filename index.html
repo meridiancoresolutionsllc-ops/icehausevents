@@ -221,21 +221,36 @@
 		<p>Venues, brands and artists: we handle the concept, the lineup, the look and the room. Past collaborators include Visionary Productions, That's So Rubes, Ain't It Fun Social Club, Girls Love R&amp;B and Recess.</p>
 		<a href="mailto:icehausent@gmail.com?subject=Booking%20inquiry" class="btn btn--light">Start a booking inquiry</a>
 	</div>
-	<!-- MAILING LIST: replace this form's action / fields with your mailing-list provider's embed -->
-	<form id="list" class="panel panel--accent" action="#" onsubmit="return false;">
+	<!-- MAILING LIST: MailerLite classic web form "r0j8e6" (form ID 6140783).
+	     Posts into a hidden iframe so visitors stay on the page; js/signup.js validates and shows the success message. -->
+	<div id="list" class="panel panel--accent">
 		<h2 class="display display--sm">Get on the list.</h2>
 		<p>First access to tickets, free-ticket drops and secret locations. No spam.</p>
-		<label for="list-email">Email</label>
-		<div class="list-row">
-			<input id="list-email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required>
-			<button type="submit" class="btn btn--dark">I'm in</button>
+
+		<form id="list-form" class="list-form" action="https://static.mailerlite.com/webforms/submit/r0j8e6" method="post" target="ml-submit-frame" novalidate>
+			<label for="list-email">Email</label>
+			<div class="list-row">
+				<input id="list-email" name="fields[email]" type="email" placeholder="you@email.com" autocomplete="email" required>
+				<button type="submit" class="btn btn--dark">I'm in</button>
+			</div>
+			<div class="g-recaptcha list-captcha" data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD"></div>
+			<input type="hidden" name="ml-submit" value="1">
+			<input type="hidden" name="anticsrf" value="true">
+			<p id="list-error" class="list-error" role="alert" hidden></p>
+		</form>
+
+		<div id="list-success" class="list-success" role="status" hidden>
+			<p class="list-success-title">You're on the list.</p>
+			<p>Watch your inbox for ticket drops and first looks at what's next.</p>
 		</div>
+		<iframe name="ml-submit-frame" title="Mailing list submission" class="sr-only" tabindex="-1" aria-hidden="true"></iframe>
+
 		<div class="list-divider"><span>or get text alerts</span></div>
 		<a href="sms:77222?&amp;body=ICEHAUS" class="text-alert">
 			<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
 			<span>Text <strong>ICEHAUS</strong> to <strong>77222</strong></span>
 		</a>
-	</form>
+	</div>
 </section>
 
 </main>
@@ -254,6 +269,8 @@
 
 <script src="js/age-gate.js"></script>
 <script src="js/events.js"></script>
+<script src="js/signup.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 
 </body>
