@@ -140,7 +140,6 @@ a:hover { color: var(--accent); }
 /* Events: "Pull up" */
 
 .section-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 48px; }
-.pull-up-title { margin-bottom: 40px; }
 .events { display: flex; flex-direction: column; gap: 24px; }
 
 .ticket { display: flex; flex-wrap: wrap; background: var(--panel); border: 1px solid #26262B; border-radius: 22px; overflow: hidden; }
