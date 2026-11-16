@@ -36,7 +36,33 @@
 		}
 	});
 
-	// If the featured-event spotlight (#next) was removed, point any links to it
+	// Scheduled content. data-show-from / data-hide-from take a full timestamp
+	// with its UTC offset, e.g. "2026-11-16T18:00:00-06:00" (6 PM Central).
+	// Elements with data-show-from ship with the `hidden` attribute and are
+	// revealed at that moment; data-hide-from removes an element at that moment.
+	document.querySelectorAll('[data-show-from]').forEach(function (el) {
+		if (now >= new Date(el.getAttribute('data-show-from'))) {
+			el.hidden = false;
+		} else {
+			el.remove();
+		}
+	});
+	document.querySelectorAll('[data-hide-from]').forEach(function (el) {
+		if (now >= new Date(el.getAttribute('data-hide-from'))) {
+			el.remove();
+		}
+	});
+
+	// The first ticket card still on the page is the featured event: it gets
+	// id="next" so the header "Get Tickets" button and hero chip jump to it.
+	var featured = document.querySelector('.events .ticket');
+	if (featured && featured.id !== 'next') {
+		var current = document.getElementById('next');
+		if (current) current.removeAttribute('id');
+		featured.id = 'next';
+	}
+
+	// If no featured event is left, point any links to it
 	// (e.g. the header "Get Tickets" button) at the Upcoming list instead.
 	if (!document.getElementById('next')) {
 		document.querySelectorAll('a[href="#next"]').forEach(function (a) {

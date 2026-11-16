@@ -281,7 +281,27 @@ a:hover { color: var(--accent); }
 	html { scroll-behavior: auto; }
 }
 
+/* Desktop: show the whole flyer, framed, instead of cropping it to the card height */
+@media (min-width: 768px) {
+	.ticket-flyer { align-self: center; padding: 24px; object-fit: contain; border-radius: 34px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
 	.date-tile { transition: none; }
 	.date-tile:hover { transform: none; }
+}
+
+/* Gold variant for the GALLERY '27 New Year's Eve feature */
+.ticket--gold { --accent: #E8C27A; --accent-hover: #F2D6A0; border-color: #4A3D24; box-shadow: 0 30px 90px rgba(232, 194, 122, 0.10); }
+.ticket--gold .ticket-body { border-left-color: #5A4A2A; }
+.tiers { width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.tier { border: 1px solid #3A3220; border-radius: 14px; padding: 14px 16px; background: rgba(232, 194, 122, 0.05); }
+.tier-name { margin: 0; font-family: var(--display); font-size: 20px; line-height: 1.05; text-transform: uppercase; color: var(--accent); }
+.tier-note { margin: 6px 0 0; font-size: 14px; line-height: 1.4; color: var(--text-2); }
+.next-chip--gold { border-color: #5A4A2A; }
+.next-chip--gold .next-chip-label { color: #E8C27A; }
+
+@media (max-width: 767px) {
+	.tiers { grid-template-columns: minmax(0, 1fr); }
+	.ticket--gold .ticket-body { border-left: 0; border-top-color: #5A4A2A; }
 }
