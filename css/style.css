@@ -305,3 +305,9 @@ a:hover { color: var(--accent); }
 	.tiers { grid-template-columns: minmax(0, 1fr); }
 	.ticket--gold .ticket-body { border-left: 0; border-top-color: #5A4A2A; }
 }
+
+/* Red variant for SAVE YOUR SOUL */
+.ticket--red { --accent: #D41F26; --accent-hover: #E5252A; border-color: #4A2224; }
+.ticket--red .ticket-body { border-left-color: #5A2A2C; }
+.ticket--red .tag, .ticket--red .btn--accent { color: #FFFFFF; }
+@media (max-width: 767px) { .ticket--red .ticket-body { border-left: 0; border-top-color: #5A2A2C; } }
