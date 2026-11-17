@@ -441,33 +441,6 @@
 	<h2 id="events-heading" class="sr-only">Upcoming Chicago parties and events</h2>
 	<div class="events">
 
-		<!-- Haus 57 Thursdays (each tile removed after its date; the whole row after the last one) -->
-		<div class="haus-row event-group" data-event-date="2026-12-17">
-			<div class="haus-intro">
-				<h3 class="display haus-title">Haus 57<br>Thursdays</h3>
-				<p>Prime 57 Restaurant + Lounge. Happy hour 4–7, lounge sounds 7–10. $7 lemon drops from 8–9.</p>
-				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="card-link">Reserve a table <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-			</div>
-			<div class="date-tiles">
-				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="date-tile date-tile--accent event-block" data-event-date="2026-11-19" aria-label="Reserve for Haus 57 on 11/19 with Diggs">
-					<span class="date-tile-date">11/19</span>
-					<span class="date-tile-dj"><span class="date-tile-label">On the 1s and 2s</span>Diggs</span>
-				</a>
-				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="date-tile date-tile--panel event-block" data-event-date="2026-12-03" aria-label="Reserve for Haus 57 on 12/03 with Sukigeez">
-					<span class="date-tile-date">12/03</span>
-					<span class="date-tile-dj"><span class="date-tile-label">On the 1s and 2s</span>Sukigeez</span>
-				</a>
-				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="date-tile date-tile--light event-block" data-event-date="2026-12-10" aria-label="Reserve for Haus 57 on 12/10 with Corleone">
-					<span class="date-tile-date">12/10</span>
-					<span class="date-tile-dj"><span class="date-tile-label">On the 1s and 2s</span>Corleone</span>
-				</a>
-				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="date-tile date-tile--accent event-block" data-event-date="2026-12-17" aria-label="Reserve for Haus 57 on 12/17 with DJ EJ">
-					<span class="date-tile-date">12/17</span>
-					<span class="date-tile-dj"><span class="date-tile-label">On the 1s and 2s</span>DJ EJ</span>
-				</a>
-			</div>
-		</div>
-
 		<!-- RATIO ticket (removed automatically after its date by js/events.js) -->
 		<article id="next" class="ticket event-block" data-event-date="2026-11-28">
 			<img src="images/flyer-ratio-pitch-black.jpg" alt="RATIO: Pitch Black Edition flyer — November 28th 2026 at Sound-Bar, 226 West Ontario Street, Chicago. Doors at 3 PM. Sound selectors Kickn Kenny, Bandcamp, Suave and Liz Moah" class="ticket-flyer" width="1080" height="1350">
@@ -523,6 +496,96 @@
 				<a href="https://posh.vip/f/f9414" target="_blank" rel="noopener" class="btn btn--accent ticket-cta">Grab tickets</a>
 			</div>
 		</article>
+
+		<!-- HAUS 57 WEEKLY CARD: js/events.js keeps only the soonest upcoming one, so one Thursday shows at a time.
+		     To add a Thursday, copy a card and change data-event-date, the date and the DJ. -->
+		<article class="ticket ticket--rust event-block" data-weekly="haus57" data-event-date="2026-11-19">
+			<img src="images/photos/haus57-flyer.jpg" alt="Haus 57 every Thursday flyer — happy hour 4 to 7 PM, lounge time 7 to 10 PM, specials all day" class="ticket-flyer ticket-flyer--small" width="350" height="465" loading="lazy">
+			<div class="ticket-body">
+				<span class="tag">This Thursday · Haus 57</span>
+				<h3 class="display ticket-title">Haus <span class="accent">57</span> Thursdays</h3>
+				<p class="ticket-copy">After-work drinks that turn into a night. Happy hour, lounge sounds and specials all day at Prime 57 Restaurant + Lounge — pull up straight from the office.</p>
+				<dl class="ticket-facts">
+					<div><dt>When</dt><dd>Thu, Nov 19 · 4 – 10 PM</dd></div>
+					<div><dt>Where</dt><dd>Prime 57 · 717 W Maxwell St</dd></div>
+					<div><dt>Specials</dt><dd>Happy hour 4–7 · $7 lemon drops 8–9</dd></div>
+					<div><dt class="keep-case">On the 1s and 2s</dt><dd>Diggs</dd></div>
+				</dl>
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="btn btn--accent ticket-cta">Reserve a table</a>
+			</div>
+		</article>
+		<article class="ticket ticket--rust event-block" data-weekly="haus57" data-event-date="2026-12-03">
+			<img src="images/photos/haus57-flyer.jpg" alt="Haus 57 every Thursday flyer — happy hour 4 to 7 PM, lounge time 7 to 10 PM, specials all day" class="ticket-flyer ticket-flyer--small" width="350" height="465" loading="lazy">
+			<div class="ticket-body">
+				<span class="tag">This Thursday · Haus 57</span>
+				<h3 class="display ticket-title">Haus <span class="accent">57</span> Thursdays</h3>
+				<p class="ticket-copy">After-work drinks that turn into a night. Happy hour, lounge sounds and specials all day at Prime 57 Restaurant + Lounge — pull up straight from the office.</p>
+				<dl class="ticket-facts">
+					<div><dt>When</dt><dd>Thu, Dec 3 · 4 – 10 PM</dd></div>
+					<div><dt>Where</dt><dd>Prime 57 · 717 W Maxwell St</dd></div>
+					<div><dt>Specials</dt><dd>Happy hour 4–7 · $7 lemon drops 8–9</dd></div>
+					<div><dt class="keep-case">On the 1s and 2s</dt><dd>Sukigeez</dd></div>
+				</dl>
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="btn btn--accent ticket-cta">Reserve a table</a>
+			</div>
+		</article>
+		<article class="ticket ticket--rust event-block" data-weekly="haus57" data-event-date="2026-12-10">
+			<img src="images/photos/haus57-flyer.jpg" alt="Haus 57 every Thursday flyer — happy hour 4 to 7 PM, lounge time 7 to 10 PM, specials all day" class="ticket-flyer ticket-flyer--small" width="350" height="465" loading="lazy">
+			<div class="ticket-body">
+				<span class="tag">This Thursday · Haus 57</span>
+				<h3 class="display ticket-title">Haus <span class="accent">57</span> Thursdays</h3>
+				<p class="ticket-copy">After-work drinks that turn into a night. Happy hour, lounge sounds and specials all day at Prime 57 Restaurant + Lounge — pull up straight from the office.</p>
+				<dl class="ticket-facts">
+					<div><dt>When</dt><dd>Thu, Dec 10 · 4 – 10 PM</dd></div>
+					<div><dt>Where</dt><dd>Prime 57 · 717 W Maxwell St</dd></div>
+					<div><dt>Specials</dt><dd>Happy hour 4–7 · $7 lemon drops 8–9</dd></div>
+					<div><dt class="keep-case">On the 1s and 2s</dt><dd>Corleone</dd></div>
+				</dl>
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="btn btn--accent ticket-cta">Reserve a table</a>
+			</div>
+		</article>
+		<article class="ticket ticket--rust event-block" data-weekly="haus57" data-event-date="2026-12-17">
+			<img src="images/photos/haus57-flyer.jpg" alt="Haus 57 every Thursday flyer — happy hour 4 to 7 PM, lounge time 7 to 10 PM, specials all day" class="ticket-flyer ticket-flyer--small" width="350" height="465" loading="lazy">
+			<div class="ticket-body">
+				<span class="tag">This Thursday · Haus 57</span>
+				<h3 class="display ticket-title">Haus <span class="accent">57</span> Thursdays</h3>
+				<p class="ticket-copy">After-work drinks that turn into a night. Happy hour, lounge sounds and specials all day at Prime 57 Restaurant + Lounge — pull up straight from the office.</p>
+				<dl class="ticket-facts">
+					<div><dt>When</dt><dd>Thu, Dec 17 · 4 – 10 PM</dd></div>
+					<div><dt>Where</dt><dd>Prime 57 · 717 W Maxwell St</dd></div>
+					<div><dt>Specials</dt><dd>Happy hour 4–7 · $7 lemon drops 8–9</dd></div>
+					<div><dt class="keep-case">On the 1s and 2s</dt><dd>DJ EJ</dd></div>
+				</dl>
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="btn btn--accent ticket-cta">Reserve a table</a>
+			</div>
+		</article>
+
+		<!-- Haus 57 Thursdays (each tile removed after its date; the whole row after the last one) -->
+		<div class="haus-row event-group" data-event-date="2026-12-17">
+			<div class="haus-intro">
+				<h3 class="display haus-title">Haus 57<br>Thursdays</h3>
+				<p>Prime 57 Restaurant + Lounge. Happy hour 4–7, lounge sounds 7–10. $7 lemon drops from 8–9.</p>
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="card-link">Reserve a table <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+			</div>
+			<div class="date-tiles">
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="date-tile date-tile--accent event-block" data-event-date="2026-11-19" aria-label="Reserve for Haus 57 on 11/19 with Diggs">
+					<span class="date-tile-date">11/19</span>
+					<span class="date-tile-dj"><span class="date-tile-label">On the 1s and 2s</span>Diggs</span>
+				</a>
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="date-tile date-tile--panel event-block" data-event-date="2026-12-03" aria-label="Reserve for Haus 57 on 12/03 with Sukigeez">
+					<span class="date-tile-date">12/03</span>
+					<span class="date-tile-dj"><span class="date-tile-label">On the 1s and 2s</span>Sukigeez</span>
+				</a>
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="date-tile date-tile--light event-block" data-event-date="2026-12-10" aria-label="Reserve for Haus 57 on 12/10 with Corleone">
+					<span class="date-tile-date">12/10</span>
+					<span class="date-tile-dj"><span class="date-tile-label">On the 1s and 2s</span>Corleone</span>
+				</a>
+				<a href="https://www.sevenrooms.com/explore/prime57restaurantandlounge/reservations/create/search/" target="_blank" rel="noopener" class="date-tile date-tile--accent event-block" data-event-date="2026-12-17" aria-label="Reserve for Haus 57 on 12/17 with DJ EJ">
+					<span class="date-tile-date">12/17</span>
+					<span class="date-tile-dj"><span class="date-tile-label">On the 1s and 2s</span>DJ EJ</span>
+				</a>
+			</div>
+		</div>
 
 		<p class="no-events" hidden>Nothing on the calendar right now — follow <a href="https://instagram.com/icehausevents" target="_blank" rel="noopener">@icehausevents</a> and get on the list so you don't miss the drop.</p>
 	</div>

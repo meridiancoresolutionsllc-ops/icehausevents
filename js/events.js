@@ -68,19 +68,31 @@
 			}
 			return el.getAttribute('data-event-date') || '9999-12-31';
 		};
-		var blocks = Array.prototype.filter.call(list.children, function (el) {
-			return el.classList.contains('ticket') || el.classList.contains('event-group');
+		// Weekly cards (Haus 57): only the soonest remaining one stays on the page,
+		// so exactly one Thursday "pops up" each week alongside the main events.
+		var weekly = Array.prototype.filter.call(list.querySelectorAll('.ticket[data-weekly]'), function () { return true; })
+			.sort(function (a, b) { return sortDate(a) < sortDate(b) ? -1 : 1; });
+		weekly.slice(1).forEach(function (el) { el.remove(); });
+
+		var tickets = Array.prototype.filter.call(list.children, function (el) {
+			return el.classList.contains('ticket');
+		});
+		var groups = Array.prototype.filter.call(list.children, function (el) {
+			return el.classList.contains('event-group');
 		});
 		var tail = list.querySelector('.no-events');
-		blocks
+		tickets
 			.map(function (el, i) { return { el: el, key: sortDate(el), i: i }; })
 			.sort(function (a, b) { return a.key < b.key ? -1 : a.key > b.key ? 1 : a.i - b.i; })
 			.forEach(function (item) { list.insertBefore(item.el, tail); });
+		// Schedules (the Haus 57 Thursdays block) always sit below the main events.
+		groups.forEach(function (el) { list.insertBefore(el, tail); });
 	}
 
 	// The first ticket card on the page (the soonest ticketed event) gets
 	// id="next" so the header "Get Tickets" button jumps to it.
-	var featured = document.querySelector('.events .ticket');
+	// Weekly cards (data-weekly) are reservations, not tickets, so they're skipped.
+	var featured = document.querySelector('.events .ticket:not([data-weekly])');
 	if (featured && featured.id !== 'next') {
 		var current = document.getElementById('next');
 		if (current) current.removeAttribute('id');
