@@ -284,7 +284,7 @@ a:hover { color: var(--accent); }
 
 /* Desktop: show the whole flyer, framed, instead of cropping it to the card height */
 @media (min-width: 768px) {
-	.ticket-flyer { align-self: center; padding: 24px; object-fit: contain; border-radius: 34px; }
+	.ticket-flyer { flex: 0 0 440px; width: 440px; max-width: 440px; align-self: center; padding: 24px; object-fit: contain; border-radius: 34px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -316,5 +316,4 @@ a:hover { color: var(--accent); }
 /* Haus 57 weekly card */
 .ticket--rust { --accent: #E06A3C; --accent-hover: #EC8A62; border-color: #4A2E22; }
 .ticket--rust .ticket-body { border-left-color: #5A3426; }
-@media (min-width: 768px) { .ticket-flyer--small { max-width: 400px; } }
 @media (max-width: 767px) { .ticket--rust .ticket-body { border-left: 0; border-top-color: #5A3426; } }
