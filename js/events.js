@@ -53,13 +53,46 @@
 		}
 	});
 
-	// The first ticket card still on the page is the featured event: it gets
-	// id="next" so the header "Get Tickets" button and hero chip jump to it.
+	// Keep events in date order, soonest first. A ticket sorts by its own date;
+	// a group (Haus 57 Thursdays) sorts by its next remaining date, so it moves
+	// down the page as its earlier dates pass.
+	var list = document.querySelector('.events');
+	if (list) {
+		var sortDate = function (el) {
+			if (el.classList.contains('event-group')) {
+				var dates = Array.prototype.map.call(
+					el.querySelectorAll('[data-event-date]'),
+					function (d) { return d.getAttribute('data-event-date'); }
+				).sort();
+				return dates[0] || el.getAttribute('data-event-date') || '9999-12-31';
+			}
+			return el.getAttribute('data-event-date') || '9999-12-31';
+		};
+		var blocks = Array.prototype.filter.call(list.children, function (el) {
+			return el.classList.contains('ticket') || el.classList.contains('event-group');
+		});
+		var tail = list.querySelector('.no-events');
+		blocks
+			.map(function (el, i) { return { el: el, key: sortDate(el), i: i }; })
+			.sort(function (a, b) { return a.key < b.key ? -1 : a.key > b.key ? 1 : a.i - b.i; })
+			.forEach(function (item) { list.insertBefore(item.el, tail); });
+	}
+
+	// The first ticket card on the page (the soonest ticketed event) gets
+	// id="next" so the header "Get Tickets" button jumps to it.
 	var featured = document.querySelector('.events .ticket');
 	if (featured && featured.id !== 'next') {
 		var current = document.getElementById('next');
 		if (current) current.removeAttribute('id');
-		featured.id = 'next';
+		if (featured.id) {
+			// It already has its own anchor (e.g. #gallery27): point "#next" links there.
+			var target = '#' + featured.id;
+			document.querySelectorAll('a[href="#next"]').forEach(function (a) {
+				a.setAttribute('href', target);
+			});
+		} else {
+			featured.id = 'next';
+		}
 	}
 
 	// If no featured event is left, point any links to it
